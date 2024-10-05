@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buket Bunga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #8b0000; /* Dark red */
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding-bottom: 5px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6347; /* Lighter red */
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #8b0000;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #555;
+        }
+
+        .catalog-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .catalog-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .catalog-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .catalog-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .catalog-item h3 {
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .catalog-item p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #ff6347;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Contact section */
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .catalog-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sejarah">Sejarah</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <h1>Selamat Datang di Toko Buket Bunga Kami</h1>
+        <p>Temukan buket bunga yang sempurna untuk setiap kesempatan di katalog kami. Kami menyediakan berbagai jenis buket bunga dengan harga yang terjangkau dan berkualitas.</p>
+    </section>
+
+    <!-- SEJARAH TOKO SECTION -->
+    <section id="sejarah">
+        <h2>Sejarah Toko</h2>
+        <p>Toko Buket Bunga ini didirikan pada tahun 2010 dengan visi untuk memberikan pelayanan terbaik dan produk bunga yang berkualitas tinggi. Kami telah melayani ribuan pelanggan dengan buket bunga yang indah untuk acara-acara spesial mereka.</p>
+    </section>
+
+    <!-- KATALOG SECTION -->
+    <section id="katalog">
+        <h2>Katalog Buket Bunga</h2>
+        <div class="catalog-container">
+            <!-- Buket 1 -->
+            <div class="catalog-item">
+                <img src="https://via.placeholder.com/250" alt="Buket Mawar">
+                <h3>Buket Mawar Merah</h3>
+                <p>Buket elegan yang terdiri dari 12 mawar merah segar, cocok untuk ungkapan cinta.</p>
+                <p class="price">Rp 250.000</p>
+            </div>
+
+            <!-- Buket 2 -->
+            <div class="catalog-item">
+                <img src="https://via.placeholder.com/250" alt="Buket Tulip">
+                <h3>Buket Tulip</h3>
+                <p>Kesegaran buket tulip warna-warni, sangat pas untuk acara-acara bahagia.</p>
+                <p class="price">Rp 300.000</p>
+            </div>
+
+            <!-- Buket 3 -->
+            <div class="catalog-item">
+                <img src="https://via.placeholder.com/250" alt="Buket Lily">
+                <h3>Buket Lily Putih</h3>
+                <p>Buket elegan yang memberikan nuansa ketenangan dan damai, terdiri dari 10 bunga lily.</p>
+                <p class="price">Rp 350.000</p>
+            </div>
+
+            <!-- Buket 4 -->
+            <div class="catalog-item">
+                <img src="https://via.placeholder.com/250" alt="Buket Campuran">
+                <h3>Buket Campuran</h3>
+                <p>Kombinasi dari berbagai bunga segar, cocok untuk berbagai kesempatan.</p>
+                <p class="price">Rp 400.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-info">
+            <p>Email: buketbunga@toko.com</p>
+            <p>Telepon: +62 812 3456 7890</p>
+            <p>Alamat: Jalan Mawar No. 123, Palembang</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Toko Buket Bunga. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
